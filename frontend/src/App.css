@@ -329,100 +329,216 @@ body {
   letter-spacing: -0.02em;
 }
 
-/* About Section */
+/* About Section - New Design */
 .about-section {
   background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
 }
 
-.about-content {
-  display: grid;
-  gap: var(--space-xxl);
+.about-intro {
+  margin-bottom: var(--space-xxl);
+  text-align: center;
 }
 
 .about-description {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--color-gray);
-  text-align: center;
   max-width: 800px;
-  margin: 0 auto var(--space-xxl);
+  margin: 0 auto var(--space-lg);
 }
 
-.subsection-title {
+.personal-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-cyber-blue);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+}
+
+.about-card {
+  background: var(--gradient-card);
+  border: var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 0;
+  transition: all 0.3s ease;
+  height: fit-content;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: var(--space-lg);
+  border-bottom: var(--border-light);
+  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.card-title {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: var(--color-black);
-  margin-bottom: var(--space-lg);
+  margin: 0;
   text-transform: uppercase;
   letter-spacing: -0.01em;
 }
 
-.education-timeline {
-  margin-bottom: var(--space-xxl);
+.card-content {
+  padding: var(--space-lg);
 }
 
-.timeline-item {
+/* Education Card */
+.education-item {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(108, 117, 125, 0.1);
   gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-  position: relative;
 }
 
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: var(--color-cyber-blue);
-  border-radius: 50%;
-  margin-top: 6px;
-  flex-shrink: 0;
+.education-item:last-child {
+  border-bottom: none;
 }
 
-.timeline-content {
+.edu-main {
   flex: 1;
 }
 
-.timeline-title {
+.edu-degree {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color-black);
   margin-bottom: var(--space-xs);
 }
 
-.timeline-institution {
+.edu-school {
   color: var(--color-gray);
-  margin-bottom: var(--space-xs);
+  font-size: 0.95rem;
+  margin: 0;
 }
 
-.timeline-year {
-  font-size: 0.9rem;
+.edu-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-xs);
+}
+
+.edu-year {
   color: var(--color-cyber-blue);
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
-.mention-badge {
-  margin-left: var(--space-sm);
+.edu-badge {
   background: var(--color-cyber-green);
   color: white;
   border: none;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
 }
 
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-md);
+/* Languages & Interests Card */
+.section-group {
+  margin-bottom: var(--space-lg);
 }
 
-.cert-card {
-  background: var(--gradient-card);
-  border: var(--border-light);
-  border-radius: var(--radius-md);
-  padding: var(--space-lg);
-  transition: all 0.3s ease;
+.section-group:last-child {
+  margin-bottom: 0;
 }
 
-.cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.group-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+}
+
+.language-name {
+  font-weight: 500;
+  color: var(--color-darker-gray);
+}
+
+.language-level {
+  background: var(--color-medium-gray);
+  color: var(--color-darker-gray);
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.interest-tag {
+  background: var(--color-cyber-blue);
+  color: white;
+  border: none;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+}
+
+/* Certifications Card */
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.cert-info {
+  flex: 1;
 }
 
 .cert-name {
@@ -435,6 +551,23 @@ body {
 .cert-score {
   color: var(--color-cyber-blue);
   font-weight: 600;
+  margin: 0;
+}
+
+.cert-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--color-cyber-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cert-shield {
+  width: 24px;
+  height: 24px;
 }
 
 /* Experience Section */
