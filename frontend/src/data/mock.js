@@ -1,6 +1,6 @@
 export const mockData = {
   about: {
-    description: "Étudiant en BTS CIEL, futur alternant en Bachelor AIS. Passionné par le développement mobile et la cybersécurité, j'ai déjà créé des applications professionnelles, des API et mis en place des systèmes sécurisés. Mon objectif est de combiner expertise technique et vision sécuritaire pour créer des solutions innovantes et protégées."
+    description: "Diplômé d'un BTS CIEL, spécialisé en cybersécurité et développement d'applications sécurisées. Passionné par la protection des infrastructures et l'innovation technologique, j'ai déjà créé des applications professionnelles, des API et mis en place des systèmes sécurisés. Mon objectif est de combiner expertise technique et vision sécuritaire pour créer des solutions innovantes et protégées."
   },
 
   education: [
