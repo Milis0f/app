@@ -828,6 +828,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .nav-content {
+    padding: 0 var(--space-sm);
+  }
+  
   .nav-links {
     display: none;
   }
@@ -836,25 +840,30 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
     gap: var(--space-lg);
+    padding: 0 var(--space-sm);
   }
   
   .hero-title {
     font-size: clamp(2.5rem, 10vw, 4rem);
   }
   
-  .hero-visual {
-    order: -1;
-    height: 250px;
+  .hero-description {
+    font-size: 1rem;
   }
   
-  .cyber-grid {
-    width: 200px;
+  .hero-visual {
+    order: -1;
     height: 200px;
   }
   
+  .cyber-grid {
+    width: 180px;
+    height: 180px;
+  }
+  
   .floating-icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   
   .section {
@@ -865,22 +874,125 @@ body {
     padding: 0 var(--space-sm);
   }
   
-  .timeline-item {
+  .section-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin-bottom: var(--space-xl);
+  }
+  
+  /* About Section Mobile */
+  .personal-stats {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .about-card {
+    margin-bottom: var(--space-md);
+  }
+  
+  .card-header {
+    padding: var(--space-md);
+  }
+  
+  .card-content {
+    padding: var(--space-md);
+  }
+  
+  .education-item {
+    flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-sm);
   }
   
+  .edu-details {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: var(--space-sm);
+  }
+  
+  .language-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+  
+  .cert-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+  
+  /* Experience Mobile */
   .exp-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--space-xs);
   }
   
+  .exp-title {
+    font-size: 1.1rem;
+  }
+  
+  /* Skills Mobile */
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
   }
   
+  .skill-header {
+    gap: var(--space-sm);
+  }
+  
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .skill-category {
+    font-size: 1rem;
+  }
+  
+  /* Contact Mobile */
   .contact-grid {
     grid-template-columns: 1fr;
     gap: var(--space-md);
+  }
+  
+  .contact-item {
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+  }
+  
+  .footer-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-content {
+    gap: var(--space-xl);
+  }
+  
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .personal-stats {
+    gap: var(--space-lg);
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
