@@ -577,14 +577,11 @@ body {
 .animate-in .project-card:nth-child(2) { transition-delay: 0.2s; }
 .animate-in .project-card:nth-child(3) { transition-delay: 0.3s; }
 
-/* Experience Section */
+/* Experience Section - Clean */
 .experience-section {
-  background: var(--gradient-dark);
-  color: var(--color-white);
-}
-
-.experience-section .section-title {
-  color: var(--color-white);
+  background: var(--color-white);
+  border-top: var(--border-light);
+  border-bottom: var(--border-light);
 }
 
 .experience-grid {
@@ -593,43 +590,47 @@ body {
 }
 
 .experience-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-md);
-  padding: var(--space-lg);
-  transition: all 0.3s ease;
+  background: var(--color-white);
+  border: var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-soft);
 }
 
 .experience-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   flex-wrap: wrap;
   gap: var(--space-sm);
 }
 
 .exp-title {
   font-weight: 600;
-  font-size: 1.3rem;
-  color: var(--color-white);
+  font-size: 1.25rem;
+  color: var(--color-black);
 }
 
 .exp-period {
-  color: var(--color-cyber-blue-light);
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--color-cyber-blue);
+  font-weight: 500;
+  font-size: 0.875rem;
+  background: var(--color-light-gray);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
 }
 
 .exp-company {
-  color: var(--color-medium-gray);
-  margin-bottom: var(--space-md);
-  font-size: 1.1rem;
+  color: var(--color-gray);
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
 }
 
 .exp-tasks {
@@ -641,16 +642,18 @@ body {
   position: relative;
   padding-left: var(--space-md);
   margin-bottom: var(--space-sm);
-  color: var(--color-light-gray);
+  color: var(--color-dark-gray);
   line-height: 1.6;
+  font-size: 0.875rem;
 }
 
 .exp-task::before {
-  content: '→';
+  content: '•';
   position: absolute;
   left: 0;
-  color: var(--color-cyber-blue-light);
+  color: var(--color-cyber-blue);
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 /* Skills Section */
