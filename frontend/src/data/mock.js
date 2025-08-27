@@ -80,6 +80,11 @@ export const mockData = {
       technologies: ["WinDev Mobile", "API REST", "Oracle", "Sécurité"]
     },
     {
+      title: "Système de vidéosurveillance AB-Secure",
+      description: "Configuration et mise en marche d'un système complet de vidéosurveillance avec serveurs de stockage d'images pour clients professionnels.",
+      technologies: ["Vidéosurveillance", "Serveurs", "Stockage", "Sécurité physique"]
+    },
+    {
       title: "Système de gestion des droits",
       description: "Implémentation d'un système de contrôle d'accès et de gestion des permissions utilisateurs.",
       technologies: ["Active Directory", "Gestion des accès", "Sécurité réseau"]
