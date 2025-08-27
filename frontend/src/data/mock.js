@@ -79,7 +79,8 @@ export const mockData = {
     address: "215 route de montluel, 01120 Nievroz",
     email: "matteo.pro021@gmail.com",
     phone: "+33 7 81 60 08 22",
-    linkedin: "https://linkedin.com/in/pollo-matteo"
+    linkedin: "https://linkedin.com/in/pollo-matteo",
+    github: "https://github.com/Milis0f"
   },
 
   interests: [
