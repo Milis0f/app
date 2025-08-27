@@ -35,6 +35,17 @@ export const mockData = {
         "Création d'une API REST connectée à une base Oracle",
         "Mise en place d'un système de gestion des droits utilisateurs"
       ]
+    },
+    {
+      role: "Technicien informatique (Stage)",
+      company: "AB-Secure, Genay, France",
+      period: "2022",
+      tasks: [
+        "Mise en marche d'un système de vidéosurveillance",
+        "Configuration et installation de serveurs de stockage d'images",
+        "Maintenance et support technique des équipements de sécurité",
+        "Assistance à la clientèle pour les solutions de surveillance"
+      ]
     }
   ],
 
