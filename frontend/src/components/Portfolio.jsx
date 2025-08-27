@@ -123,37 +123,6 @@ const Portfolio = () => {
               </div>
             </Card>
 
-            {/* Languages & Interests Card */}
-            <Card className="about-card interests-card">
-              <div className="card-header">
-                <h3 className="card-title">Langues & Centres d'intérêt</h3>
-              </div>
-              <div className="card-content">
-                <div className="section-group">
-                  <h4 className="group-title">Langues</h4>
-                  <div className="language-list">
-                    {mockData.languages.map((lang, index) => (
-                      <div key={index} className="language-item">
-                        <span className="language-name">{lang.language}</span>
-                        <Badge variant="outline" className="language-level">{lang.level}</Badge>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="section-group">
-                  <h4 className="group-title">Centres d'intérêt</h4>
-                  <div className="interests-list">
-                    {mockData.interests.map((interest, index) => (
-                      <Badge key={index} variant="secondary" className="interest-tag">
-                        {interest}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Card>
-
             {/* Certifications Card */}
             <Card className="about-card certifications-card">
               <div className="card-header">
