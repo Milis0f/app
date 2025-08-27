@@ -8,7 +8,7 @@ export const mockData = {
       degree: "BTS CIEL option IR",
       institution: "École Sup'Etixs, Decines, France",
       year: "2023-2025",
-      mention: "En cours"
+      mention: "Obtenu"
     },
     {
       degree: "BAC Pro SN opt RISC",
