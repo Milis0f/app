@@ -84,6 +84,24 @@ const Portfolio = () => {
               <Download className="btn-icon" />
               Télécharger mon CV
             </Button>
+            
+            <div className="social-buttons">
+              <Button 
+                onClick={() => window.open(mockData.contact.linkedin, '_blank')}
+                className="social-btn linkedin-btn"
+              >
+                <Linkedin className="btn-icon" />
+                LinkedIn
+              </Button>
+              
+              <Button 
+                onClick={() => window.open(mockData.contact.github, '_blank')}
+                className="social-btn github-btn"
+              >
+                <Github className="btn-icon" />
+                GitHub
+              </Button>
+            </div>
           </div>
           <div className="hero-visual">
             <div className="cyber-grid">
