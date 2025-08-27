@@ -75,41 +75,104 @@ const Portfolio = () => {
       <section id="about" className="section about-section">
         <div className="container">
           <h2 className="section-title">À PROPOS DE MOI</h2>
-          <div className="about-content">
-            <div className="about-text">
+          
+          {/* Personal Introduction */}
+          <div className="about-intro">
+            <div className="intro-content">
               <p className="about-description">
                 {mockData.about.description}
               </p>
+              
+              <div className="personal-stats">
+                <div className="stat-item">
+                  <span className="stat-number">2+</span>
+                  <span className="stat-label">Années d'expérience</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">3</span>
+                  <span className="stat-label">Projets réalisés</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">94%</span>
+                  <span className="stat-label">Score ANSSI</span>
+                </div>
+              </div>
             </div>
-            
-            <div className="education-timeline">
-              <h3 className="subsection-title">Parcours Scolaire</h3>
-              {mockData.education.map((edu, index) => (
-                <div key={index} className="timeline-item">
-                  <div className="timeline-dot"></div>
-                  <div className="timeline-content">
-                    <h4 className="timeline-title">{edu.degree}</h4>
-                    <p className="timeline-institution">{edu.institution}</p>
-                    <span className="timeline-year">{edu.year}</span>
-                    {edu.mention && <Badge variant="outline" className="mention-badge">{edu.mention}</Badge>}
+          </div>
+
+          {/* Education & Certifications Grid */}
+          <div className="about-grid">
+            {/* Education Card */}
+            <Card className="about-card education-card">
+              <div className="card-header">
+                <h3 className="card-title">Formation</h3>
+              </div>
+              <div className="card-content">
+                {mockData.education.map((edu, index) => (
+                  <div key={index} className="education-item">
+                    <div className="edu-main">
+                      <h4 className="edu-degree">{edu.degree}</h4>
+                      <p className="edu-school">{edu.institution}</p>
+                    </div>
+                    <div className="edu-details">
+                      <span className="edu-year">{edu.year}</span>
+                      {edu.mention && <Badge variant="secondary" className="edu-badge">{edu.mention}</Badge>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            {/* Languages & Interests Card */}
+            <Card className="about-card interests-card">
+              <div className="card-header">
+                <h3 className="card-title">Langues & Centres d'intérêt</h3>
+              </div>
+              <div className="card-content">
+                <div className="section-group">
+                  <h4 className="group-title">Langues</h4>
+                  <div className="language-list">
+                    {mockData.languages.map((lang, index) => (
+                      <div key={index} className="language-item">
+                        <span className="language-name">{lang.language}</span>
+                        <Badge variant="outline" className="language-level">{lang.level}</Badge>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              ))}
-            </div>
+                
+                <div className="section-group">
+                  <h4 className="group-title">Centres d'intérêt</h4>
+                  <div className="interests-list">
+                    {mockData.interests.map((interest, index) => (
+                      <Badge key={index} variant="secondary" className="interest-tag">
+                        {interest}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Card>
 
-            <div className="certifications">
-              <h3 className="subsection-title">Certifications</h3>
-              <div className="cert-grid">
+            {/* Certifications Card */}
+            <Card className="about-card certifications-card">
+              <div className="card-header">
+                <h3 className="card-title">Certifications</h3>
+              </div>
+              <div className="card-content">
                 {mockData.certifications.map((cert, index) => (
-                  <Card key={index} className="cert-card">
-                    <div className="cert-content">
+                  <div key={index} className="cert-item">
+                    <div className="cert-info">
                       <h4 className="cert-name">{cert.name}</h4>
                       <p className="cert-score">{cert.score}</p>
                     </div>
-                  </Card>
+                    <div className="cert-icon">
+                      <Shield className="cert-shield" />
+                    </div>
+                  </div>
                 ))}
               </div>
-            </div>
+            </Card>
           </div>
         </div>
       </section>
