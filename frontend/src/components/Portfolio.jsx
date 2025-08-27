@@ -134,7 +134,7 @@ const Portfolio = () => {
                   <span className="stat-label">Années d'expérience</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">3</span>
+                  <span className="stat-number">4</span>
                   <span className="stat-label">Projets réalisés</span>
                 </div>
                 <div className="stat-item">
