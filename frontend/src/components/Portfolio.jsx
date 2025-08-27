@@ -261,19 +261,9 @@ const Portfolio = () => {
               <h2 className="footer-title">CONTACT</h2>
               <div className="contact-grid">
                 <div className="contact-item">
-                  <h4 className="contact-label">Adresse</h4>
-                  <p className="contact-value">{mockData.contact.address}</p>
-                </div>
-                <div className="contact-item">
                   <h4 className="contact-label">Email</h4>
                   <a href={`mailto:${mockData.contact.email}`} className="contact-link">
                     {mockData.contact.email}
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <h4 className="contact-label">Téléphone</h4>
-                  <a href={`tel:${mockData.contact.phone}`} className="contact-link">
-                    {mockData.contact.phone}
                   </a>
                 </div>
                 <div className="contact-item">
