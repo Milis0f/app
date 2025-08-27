@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Download, ChevronDown, Shield, Code, Database, Network, Cpu, Lock } from "lucide-react";
+import { Download, ChevronDown, Shield, Code, Database, Network, Cpu, Lock, Github, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
