@@ -42,7 +42,7 @@ const Portfolio = () => {
   const handleDownloadCV = () => {
     // Mock CV download - will be replaced with real file
     const link = document.createElement('a');
-    link.href = '/cv-matteo-pollo.pdf'; // Mock path
+    link.href = '/Cv-Matteo-POLLO.pdf'; // Mock path
     link.download = 'CV-Matteo-Pollo-Cybersecurite.pdf';
     link.click();
   };
