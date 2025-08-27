@@ -356,9 +356,9 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* About Section - New Design */
+/* About Section - Clean */
 .about-section {
-  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  background: var(--color-light-gray);
 }
 
 .about-intro {
@@ -367,18 +367,18 @@ body {
 }
 
 .about-description {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.7;
   color: var(--color-gray);
-  max-width: 800px;
-  margin: 0 auto var(--space-lg);
+  max-width: 720px;
+  margin: 0 auto var(--space-xl);
 }
 
 .personal-stats {
   display: flex;
   justify-content: center;
-  gap: var(--space-xl);
-  margin-top: var(--space-lg);
+  gap: var(--space-xxl);
+  margin-top: var(--space-xl);
 }
 
 .stat-item {
@@ -389,18 +389,16 @@ body {
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--color-cyber-blue);
   line-height: 1;
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--color-gray);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about-grid {
@@ -410,46 +408,45 @@ body {
 }
 
 .about-card {
-  background: var(--gradient-card);
+  background: var(--color-white);
   border: var(--border-light);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   height: fit-content;
+  box-shadow: var(--shadow-soft);
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 
 .card-header {
   padding: var(--space-lg);
   border-bottom: var(--border-light);
-  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: var(--color-light-gray);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .card-title {
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   color: var(--color-black);
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
 }
 
 .card-content {
   padding: var(--space-lg);
 }
 
-/* Education Card */
+/* Education Card - Clean */
 .education-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: var(--space-md) 0;
-  border-bottom: 1px solid rgba(108, 117, 125, 0.1);
+  border-bottom: var(--border-light);
   gap: var(--space-md);
 }
 
@@ -463,14 +460,14 @@ body {
 
 .edu-degree {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-black);
   margin-bottom: var(--space-xs);
 }
 
 .edu-school {
   color: var(--color-gray);
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   margin: 0;
 }
 
@@ -483,85 +480,28 @@ body {
 
 .edu-year {
   color: var(--color-cyber-blue);
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 0.875rem;
 }
 
 .edu-badge {
-  background: var(--color-cyber-green);
+  background: var(--color-success);
   color: white;
   border: none;
-  font-size: 0.8rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
 }
 
-/* Languages & Interests Card */
-.section-group {
-  margin-bottom: var(--space-lg);
-}
-
-.section-group:last-child {
-  margin-bottom: 0;
-}
-
-.group-title {
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--color-black);
-  margin-bottom: var(--space-md);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.language-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-
-.language-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-sm) 0;
-}
-
-.language-name {
-  font-weight: 500;
-  color: var(--color-darker-gray);
-}
-
-.language-level {
-  background: var(--color-medium-gray);
-  color: var(--color-darker-gray);
-  border: none;
-  font-size: 0.8rem;
-  padding: 0.2rem 0.6rem;
-}
-
-.interests-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-}
-
-.interest-tag {
-  background: var(--color-cyber-blue);
-  color: white;
-  border: none;
-  font-size: 0.85rem;
-  padding: 0.3rem 0.8rem;
-}
-
-/* Certifications Card */
+/* Certifications Card - Clean */
 .cert-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--space-md);
-  background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(0, 102, 204, 0.1);
+  background: var(--color-light-gray);
+  border-radius: var(--radius-md);
+  border: var(--border-light);
 }
 
 .cert-info {
@@ -570,26 +510,32 @@ body {
 
 .cert-name {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-black);
   margin-bottom: var(--space-xs);
 }
 
 .cert-score {
   color: var(--color-cyber-blue);
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
+  font-size: 0.875rem;
 }
 
 .cert-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: var(--color-cyber-blue);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.cert-shield {
+  width: 20px;
+  height: 20px;
 }
 
 /* Animation System */
