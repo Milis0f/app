@@ -103,7 +103,7 @@ const Portfolio = () => {
               </Button>
             </div>
           </div>
-          <div className="hero-visual">
+          <div className="hero-visual" style={{transform: `translateY(${scrollY * 0.1}px)`}}>
             <div className="cyber-grid">
               <Shield className="floating-icon" />
               <Lock className="floating-icon" />
