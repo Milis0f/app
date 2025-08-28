@@ -8,6 +8,18 @@ import { mockData } from "../data/mock";
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize(); // vérifie au montage
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   useEffect(() => {
     setIsVisible(true);
@@ -77,8 +89,8 @@ const Portfolio = () => {
             </h1>
             <p className="hero-subtitle">Sécurité IT & Développement</p>
             <p className="hero-description">
-              Spécialiste en cybersécurité et développement d'applications sécurisées.
-              Passionné par la protection des infrastructures et l'innovation technologique.
+              Orienté cybersécurité et installation d’infrastructures IT.
+Passionné par la protection des systèmes et l’innovation technologique.
             </p>
             <Button onClick={handleDownloadCV} className="download-btn">
               <Download className="btn-icon" />
@@ -103,13 +115,13 @@ const Portfolio = () => {
               </Button>
             </div>
           </div>
-          <div className="hero-visual" style={{transform: `translateY(${scrollY * 0.1}px)`}}>
+          {!isMobile && ( <div className="hero-visual" style={{transform: `translateY(${scrollY * 0.1}px)`}}>
             <div className="cyber-grid">
               <Shield className="floating-icon" />
               <Lock className="floating-icon" />
               <Network className="floating-icon" />
             </div>
-          </div>
+          </div>)}
         </div>
         <div className="scroll-indicator">
           <ChevronDown className="scroll-arrow" />
@@ -119,7 +131,7 @@ const Portfolio = () => {
       {/* About Section */}
       <section id="about" className="section about-section">
         <div className="container">
-          <h2 className="section-title">À PROPOS DE MOI</h2>
+          <h2 className="section-title-indark">À PROPOS DE MOI</h2>
           
           {/* Personal Introduction */}
           <div className="about-intro">

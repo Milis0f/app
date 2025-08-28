@@ -1,6 +1,6 @@
 export const mockData = {
   about: {
-    description: "Diplômé d'un BTS CIEL, spécialisé en cybersécurité et développement d'applications sécurisées. Passionné par la protection des infrastructures et l'innovation technologique, j'ai déjà créé des applications professionnelles, des API et mis en place des systèmes sécurisés. Mon objectif est de combiner expertise technique et vision sécuritaire pour créer des solutions innovantes et protégées."
+    description: "Diplômé d’un BTS CIEL avec une spécialisation en cybersécurité et administration système. Expérience en développement d’API, gestion de serveurs et mise en place d’environnements réseau. Objectif : combiner compétences techniques et sécurité pour concevoir des solutions fiables et efficaces."
   },
 
   education: [
@@ -31,7 +31,7 @@ export const mockData = {
       company: "Secora E.Leclerc, Pusignan, France",
       period: "2023-2025",
       tasks: [
-        "Développement d'une application mobile sécurisée sous WinDev Mobile",
+        "Développement d'une application mobile sous WinDev Mobile",
         "Création d'une API REST connectée à une base Oracle",
         "Mise en place d'un système de gestion des droits utilisateurs"
       ]
@@ -41,7 +41,7 @@ export const mockData = {
       company: "AB-Secure, Genay, France",
       period: "2022",
       tasks: [
-        "Mise en marche d'un système de vidéosurveillance",
+        "Mise en marche d'un système de vidéo surveillance",
         "Configuration et installation de serveurs de stockage d'images",
         "Maintenance et support technique des équipements de sécurité",
         "Assistance à la clientèle pour les solutions de surveillance"
@@ -61,10 +61,6 @@ export const mockData = {
     {
       category: "Sécurité",
       skills: ["Gestion des accès", "Surveillance vidéo IP", "Sécurisation réseau", "Analyse des risques"]
-    },
-    {
-      category: "Outils & Environnement",
-      skills: ["Git", "Oracle", "Supervision", "Cahier des charges", "Déploiement d'applications"]
     }
   ],
 
