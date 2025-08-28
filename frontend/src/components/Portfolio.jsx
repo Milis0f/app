@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Download, ChevronDown, Shield, Code, Database, Network, Cpu, Lock, Github, Linkedin } from "lucide-react";
+import { Download, ChevronDown, Shield, Code, Database, Network, Cpu, Lock, Github, Linkedin, Sparkles, Zap, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -117,9 +117,15 @@ Passionné par la protection des systèmes et l’innovation technologique.
           </div>
           {!isMobile && ( <div className="hero-visual" style={{transform: `translateY(${scrollY * 0.1}px)`}}>
             <div className="cyber-grid">
-              <Shield className="floating-icon" />
-              <Lock className="floating-icon" />
-              <Network className="floating-icon" />
+              <div className="floating-icon">
+                <Shield size={28} />
+              </div>
+              <div className="floating-icon">
+                <Lock size={28} />
+              </div>
+              <div className="floating-icon">
+                <Network size={28} />
+              </div>
             </div>
           </div>)}
         </div>
@@ -193,7 +199,7 @@ Passionné par la protection des systèmes et l’innovation technologique.
                       <p className="cert-score">{cert.score}</p>
                     </div>
                     <div className="cert-icon">
-                      <Shield className="cert-shield" />
+                      <Shield size={20} />
                     </div>
                   </div>
                 ))}
@@ -235,10 +241,10 @@ Passionné par la protection des systèmes et l’innovation technologique.
               <Card key={index} className="skill-card">
                 <div className="skill-header">
                   <div className="skill-icon">
-                    {skillCategory.category === 'Développement' && <Code />}
-                    {skillCategory.category === 'Administration Système' && <Cpu />}
-                    {skillCategory.category === 'Sécurité' && <Shield />}
-                    {skillCategory.category === 'Base de Données' && <Database />}
+                    {skillCategory.category === 'Développement' && <Code size={24} />}
+                    {skillCategory.category === 'Administration Système' && <Cpu size={24} />}
+                    {skillCategory.category === 'Sécurité' && <Shield size={24} />}
+                    {skillCategory.category === 'Outils & Environnement' && <Database size={24} />}
                   </div>
                   <h3 className="skill-category">{skillCategory.category}</h3>
                 </div>
